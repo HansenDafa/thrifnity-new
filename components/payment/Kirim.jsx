@@ -208,7 +208,7 @@ export default function Kirim() {
                   <p className="text-[13px]">Rp30.000,00</p>
                   <p className="text-[13px] opacity-[.50]">Saldo Tidak Cukup</p>
                 </div>
-                <button className="ml-[190px] ">
+                <button className="ml-[180px] ">
                   <IoIosArrowDroprightCircle size={45} color="#3E918D" />
                 </button>
               </div>
@@ -221,7 +221,7 @@ export default function Kirim() {
                   <p className="text-[13px]">OVO CASH</p>
                   <p className="text-[13px] opacity-[.50]">Saldo Tidak Cukup</p>
                 </div>
-                <button className="ml-[191px] ">
+                <button className="ml-[181px] ">
                   <IoIosArrowDroprightCircle size={45} color="#3E918D" />
                 </button>
               </div>
@@ -235,7 +235,7 @@ export default function Kirim() {
                 <h1 className="ml-5 text-[18px] mt-2  font-semibold">
                   Kartu Kredit / Cicilan
                 </h1>
-                <button className="ml-[127px] ">
+                <button className="ml-[117px] ">
                   <IoIosArrowDroprightCircle size={45} color="#3E918D" />
                 </button>
               </div>
@@ -249,7 +249,7 @@ export default function Kirim() {
                 <h1 className="ml-5 text-[18px] mt-2  font-semibold  ">
                   BCA Virtual Account
                 </h1>
-                <button className="ml-[127px] ">
+                <button className="ml-[117px] ">
                   <IoIosArrowDroprightCircle size={45} color="#3E918D" />
                 </button>
               </div>
@@ -261,7 +261,7 @@ export default function Kirim() {
                 <h1 className="ml-5 text-[18px] mt-2  font-semibold  ">
                   BCA Virtual Account
                 </h1>
-                <button className="ml-[127px] ">
+                <button className="ml-[117px] ">
                   <IoIosArrowDroprightCircle size={45} color="#3E918D" />
                 </button>
               </div>

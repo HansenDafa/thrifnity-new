@@ -1,6 +1,8 @@
+import Link from "next/link";
 
 const NearestThriftCard = () => {
     return (
+        <Link href={`/productdetails`}>
         <div className="flex flex-col sm:flex-row items-center justify-between bg-white shadow-md rounded-lg p-4 w-full max-w-2xl">
             {/* Gambar Produk */}
             <div className="flex-shrink-0">
@@ -23,6 +25,7 @@ const NearestThriftCard = () => {
                 <p className="text-custom-sage font-bold mt-2">Rp 60.000</p>
             </div>
         </div>
+        </Link>
     );
 };
 

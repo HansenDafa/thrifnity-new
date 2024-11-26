@@ -4,10 +4,10 @@ import Bayar from "@/components/payment/Ringkas";
 export default function Pay() {
   return (
     <main>
-      <h1 className="font-bold mx-[114px] mt-7 font-open-sans w-[400.95px] text-[28.1px]">
+      <h1 className="font-bold mx-[164px] mt-7 font-open-sans w-[400.95px] text-[28.1px]">
         Barang yang Dibeli
       </h1>
-      <div className=" flex mx-[114px] mt-7    justify-between	   ">
+      <div className=" flex mx-[164px] mt-7    justify-between 	   ">
         <div className="flex flex-col w-[664.36px] mb-10">
           <Isi />
           <h1 className="mt-[80px] text-[28.1px] font-bold">

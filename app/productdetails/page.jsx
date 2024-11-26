@@ -7,15 +7,15 @@ import { FaStar } from 'react-icons/fa';
 
 const ProductPage = () => {
     const images = [
-        "/images/products/product1.png",
-        "/images/products/product2.png",
-        "/images/products/product3.png",
-        "/images/products/product4.png",
-        "/images/products/product5.png",
+        "/images/product/product1.png",
+        "/images/product/product2.png",
+        "/images/product/product3.png",
+        "/images/product/product4.png",
+        "/images/product/product5.png",
     ];
 
     const product = {
-        image: "/images/products/product1.png",
+        image: "/images/product/product1.png",
         name: "Asics Men's Black & Yellow Jersey",
         price: "Rp 300.000",
         size: "Size: M",
