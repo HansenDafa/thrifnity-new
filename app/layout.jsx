@@ -1,7 +1,14 @@
-import localFont from "next/font/local";
-import "./globals.css";
-import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
+import "./globals.css";
+
+export const metadata = {
+  title: "Thriftnity",
+  description: "Platform terbaik untuk produk thrift",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (

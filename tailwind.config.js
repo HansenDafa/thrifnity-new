@@ -15,6 +15,8 @@ module.exports = {
         custom: {
           sage: "#3E918D",
           white: "#FBFBFB",
+          customGreen: "#3E918D",
+          customWhite: "#D9D9D9",
         },
       },
     },
