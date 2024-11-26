@@ -137,9 +137,9 @@ export default function Kirim() {
                 <p className=" mt-3">6285893894</p>
                 <p className="mt-3">Jalan Airlangga no 1</p>
                 <div className="flex gap-5">
-                  <button className="mt-3 text-custom-customGreen">
+                  <butt on className="mt-3 text-custom-customGreen">
                     Share
-                  </button>
+                  </butt>
                   <button className="mt-3 text-custom-customGreen ">
                     Ubah Alamat
                   </button>
