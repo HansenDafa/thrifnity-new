@@ -27,7 +27,9 @@ export default function Header() {
         <div className="flex gap-8 items-center justify-center">
           <BsHeart size={27} className="w-full h-full" />
 
-            <BsCart size={28} className="w-full h-full hover:cursor-pointer" />
+          <Link href="/cart" className="">
+            <BsCart size={28} className=" hover:cursor-pointer" />
+          </Link>
 
           <Dropdown className="relative">
             <Dropdown.Title className={`flex`}>
