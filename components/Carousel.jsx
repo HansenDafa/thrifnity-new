@@ -2,7 +2,7 @@ import '@/app/styles/embla.css';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Carousel = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -19,8 +19,8 @@ const Carousel = () => {
 
     const images = [
         "/images/sliders/slider1.png",
-        "/images/sliders/slider1.png",
-        "/images/sliders/slider1.png",
+        "/images/sliders/slider2.png",
+        "/images/sliders/slider3.jpg",
     ];
 
     useEffect(() => {
