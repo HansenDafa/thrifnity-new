@@ -39,7 +39,7 @@ export const locations = [
 export const products = [
 	{
 		id: 1,
-		label: 'Baju Mekanik Lengan Pendek T-Shirt Cotton',
+		label: 'Baju Mekanik Lengan Pendek T-Shirt',
 		image: 'https://picsum.photos/id/1/600/600',
 		price: 600000,
 		store: 'Fashion Mekanik',

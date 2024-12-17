@@ -7,7 +7,7 @@ import { Sidebar } from '@/components/shop/sidebar';
 
 export default function ShopPage() {
 	return (
-		<>
+		<div className="max-w-6xl mx-auto p-6 mt-10">
 			<div className='mb-4'>
 				<h1 className='mb-2 text-4xl font-bold'>Filter</h1>
 			</div>
@@ -34,6 +34,6 @@ export default function ShopPage() {
 					<Button>Lihat Selengkapnya</Button>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }

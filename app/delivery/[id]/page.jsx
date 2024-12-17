@@ -59,7 +59,7 @@ export default async function ShopPage({ params }) {
 
 	if (!product) {
 		return (
-			<>
+			<div className="max-w-5xl mx-auto p-6">
 				<div className='mb-4'>
 					<h1 className='mb-2 text-4xl font-bold'>
 						Product Not Found
@@ -74,12 +74,12 @@ export default async function ShopPage({ params }) {
 				<Link href='/'>
 					<Button>Back to Homepage</Button>
 				</Link>
-			</>
+			</div>
 		);
 	}
 
 	return (
-		<>
+		<div className="max-w-5xl mx-auto p-6">
 			<div className='mb-4'>
 				<h1 className='mb-2 text-4xl font-bold'>Delivery Details</h1>
 			</div>
@@ -170,6 +170,6 @@ export default async function ShopPage({ params }) {
 					))}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
