@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import WHITELOGO from "@/public/images/logo/white-logo.svg";
-import { BsCart, BsHeart, BsPerson, BsSearch } from "react-icons/bs";
+import Image from "next/image";
 import Link from "next/link";
+import { BsCart, BsHeart, BsPerson, BsSearch } from "react-icons/bs";
 import Dropdown from "../dropdown/Dropdown";
 
 export default function Header() {
@@ -25,7 +25,9 @@ export default function Header() {
           />
         </div>
         <div className="flex gap-8 items-center justify-center">
-          <BsHeart size={27} className="w-full h-full" />
+          <Link href="/wishlist" className="">
+            <BsHeart size={27} className="hover:cursor-pointer" />
+          </Link>
 
           <Link href="/cart" className="">
             <BsCart size={28} className=" hover:cursor-pointer" />
