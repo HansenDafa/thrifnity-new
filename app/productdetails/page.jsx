@@ -3,6 +3,7 @@
 import ProductCard from "@/components/card/HomeNDetailsProductCard";
 import ImageGallery from "@/components/ImageGallery";
 import Image from 'next/image';
+import Link from "next/link";
 import { FaStar } from 'react-icons/fa';
 
 const ProductPage = () => {
@@ -14,12 +15,38 @@ const ProductPage = () => {
         "/images/product/product5.png",
     ];
 
-    const product = {
-        image: "/images/product/product1.png",
-        name: "Asics Men's Black & Yellow Jersey",
-        price: "Rp 300.000",
-        size: "Size: M",
-    };
+    const products = [
+        {
+            image: "/images/product/productE.png",
+            name: "Adidas Men's Black...",
+            price: "Rp 300.000",
+            size: "Size: M",
+        },
+        {
+            image: "/images/product/productA.png",
+            name: "Hanes Men's Black T-shirt",
+            price: "Rp 50.000",
+            size: "S",
+        },
+        {
+            image: "/images/product/productB.png",
+            name: "Men's White T-shirt",
+            price: "Rp 100.000",
+            size: "L",
+        },
+        {
+            image: "/images/product/productC.png",
+            name: "Hysteric Glamour Women's...",
+            price: "Rp 200.000",
+            size: "L",
+        },
+        {
+            image: "/images/product/productD.png",
+            name: "Hysteric Glamour Women's...",
+            price: "Rp 30.000",
+            size: "M",
+        },
+    ];
 
     const storeReviews = [
         { name: "Lovina", rating: 5, comment: "Turns out bajunya super lucu dilihat langsung 😍." },
@@ -40,7 +67,9 @@ const ProductPage = () => {
                     <p className="text-sm text-gray-500">Size: M &bull; Kondisi Lorem Ipsum</p>
 
                     <button className="w-full bg-custom-sage text-white py-2 rounded-lg font-semibold hover:bg-dark-green-600">
-                        Beli Sekarang
+                        <Link href="/payment">
+                            Beli Sekarang
+                        </Link>
                     </button>
                     <button className="w-full border border-gray-400 py-2 rounded-lg font-semibold mt-2">
                         + Keranjang
@@ -77,11 +106,9 @@ const ProductPage = () => {
                 <a href="#" className="text-custom-sage font-semibold">Lihat semua</a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                <ProductCard product={product} />
-                <ProductCard product={product} />
-                <ProductCard product={product} />
-                <ProductCard product={product} />
-                <ProductCard product={product} />
+                {products.map((product, index) => (
+                    <ProductCard key={index} product={product} />
+                ))}
             </div>
 
             {/* Store Reviews */}
@@ -122,11 +149,11 @@ const ProductPage = () => {
                 {/* Review Toko dari Produk yang Lain */}
                 <div className="w-full lg:w-2/3">
                     <h2 className="text-xl font-semibold mb-4">Review Toko dari Produk yang Lain</h2>
-                    <div className="space-y-6">
+                    <div>
                         {storeReviews.map((review, index) => (
                             <div key={index} className="flex items-start p-4 border-b border-gray-300">
                                 <Image
-                                    src={images[index % images.length]}
+                                    src={products[index % products.length].image}
                                     alt={`Product image ${index + 1}`}
                                     width={70}
                                     height={70}
