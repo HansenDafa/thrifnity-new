@@ -9,12 +9,44 @@ import PriceRangeCard from "@/components/card/PriceRangeCard";
 import Image from "next/image";
 import Link from "next/link";
 
-const product = {
-  image: "/images/product/product1.png",
-  name: "Asics Men's Black & Yellow Jersey",
-  price: "Rp 300.000",
-  size: "Size: M",
-};
+const products = [
+  {
+    image: "/images/product/product1.png",
+    name: "Asics Men's Black & Yellow Jersey",
+    price: "Rp 300.000",
+    size: "M",
+  },
+  {
+    image: "/images/product/productA.png",
+    name: "Hanes Men's Black T-shirt",
+    price: "Rp 50.000",
+    size: "S",
+  },
+  {
+    image: "/images/product/productB.png",
+    name: "Men's White T-shirt",
+    price: "Rp 100.000",
+    size: "L",
+  },
+  {
+    image: "/images/product/productC.png",
+    name: "Hysteric Glamour Women's...",
+    price: "Rp 200.000",
+    size: "L",
+  },
+  {
+    image: "/images/product/productD.png",
+    name: "Hysteric Glamour Women's...",
+    price: "Rp 30.000",
+    size: "M",
+  },
+  {
+    image: "/images/product/productE.png",
+    name: "Adidas Men's Black...",
+    price: "Rp 150.000",
+    size: "M",
+  },
+];
 
 const styles = [
   {
@@ -66,12 +98,9 @@ export default function Home() {
             <Link href="/search" className="text-lg font-normal text-custom-sage hover:text-green-500 transition-colors">More...</Link>
           </h1>
           <div className="mt-3 mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-            <ProductCard product={product} />
-            <ProductCard product={product} />
-            <ProductCard product={product} />
-            <ProductCard product={product} />
-            <ProductCard product={product} />
-            <ProductCard product={product} />
+            {products.map((product, index) => (
+              <ProductCard key={index} product={product} />
+            ))}
           </div>
         </div>
 
@@ -83,7 +112,7 @@ export default function Home() {
               {/* Nearest Thrift Card */}
               <div className="flex-[0.7] flex flex-col justify-between h-full">
                 <NearestThriftCard />
-                <Link href="/thrift-lainnya">
+                <Link href="/nearest">
                   <MainButton className="rounded-lg mt-4 w-full">
                     Tampilkan Thrift Lainnya
                   </MainButton>
