@@ -137,7 +137,7 @@ export default function Home() {
         <div className="mt-10">
           <h1 className="text-2xl font-bold flex justify-between items-center">
             Pilih Style Kamu!
-            <Link href="/search" className="text-lg font-normal text-custom-sage hover:text-green-500 transition-colors">More...</Link>
+            <Link href="/category" className="text-lg font-normal text-custom-sage hover:text-green-500 transition-colors">More...</Link>
           </h1>
 
           {/* Style Grid */}
@@ -145,13 +145,15 @@ export default function Home() {
             {styles.map((style, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="overflow-hidden rounded-md w-full h-auto group">
-                  <Image
-                    src={style.image}
-                    alt={style.name}
-                    width={200}
-                    height={200}
-                    className="rounded-md w-full h-auto transform group-hover:scale-110 transition-transform duration-300"
-                  />
+                  <Link href="/category">
+                    <Image
+                      src={style.image}
+                      alt={style.name}
+                      width={200}
+                      height={200}
+                      className="rounded-md w-full h-auto transform group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </Link>
                 </div>
                 <p className="mt-1 text-m font-bold text-gray-700">{style.name}</p>
               </div>
@@ -174,7 +176,7 @@ export default function Home() {
         <div className="mt-12">
           <h1 className="text-2xl font-bold flex justify-between items-center">
             Brand Populer
-            <Link href="/search" className="text-lg font-normal text-custom-sage hover:text-green-500 transition-colors">More...</Link>
+            <Link href="/category" className="text-lg font-normal text-custom-sage hover:text-green-500 transition-colors">More...</Link>
           </h1>
           {/* Price Range Grid */}
           <div className="mt-4 mb-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Total() {
   return (
     <div>
@@ -45,7 +47,9 @@ export default function Total() {
         </div>
         <hr className="border border-black mt-5 " />
         <button className="bg-custom-customGreen text-white mt-5 h-[53px] rounded-lg text-[20.51px] font-bold mb-1">
-          Bayar
+          <Link href={'/delivery/' + 1}>
+            Bayar
+          </Link>
         </button>
       </div>
     </div>

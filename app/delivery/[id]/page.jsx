@@ -1,19 +1,8 @@
-import * as React from 'react';
-
-import {
-	CarFront,
-	Handshake,
-	Package,
-	PencilIcon,
-	TrashIcon,
-	User,
-} from 'lucide-react';
-import { formatDate, formatPrice } from '@/libs/utils';
-
-import Button from '@/components/ui/button';
-import Image from 'next/image';
-import Link from 'next/link';
 import { products } from '@/libs/constant';
+import { formatDate, formatPrice } from '@/libs/utils';
+import { CarFront, Handshake, Package, User } from 'lucide-react';
+import Image from 'next/image';
+import * as React from 'react';
 
 const events = [
 	{
@@ -53,30 +42,8 @@ const trace = [
 	},
 ];
 
-export default async function ShopPage({ params }) {
-	const { id } = await params;
-	const product = products.find((p) => p.id === Number(id));
-
-	if (!product) {
-		return (
-			<div className="max-w-5xl mx-auto p-6">
-				<div className='mb-4'>
-					<h1 className='mb-2 text-4xl font-bold'>
-						Product Not Found
-					</h1>
-					<p className='text-muted'>
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Ullam perferendis, doloribus adipisci non ad
-						cumque maxime laborum assumenda? Minus, officiis.
-					</p>
-				</div>
-
-				<Link href='/'>
-					<Button>Back to Homepage</Button>
-				</Link>
-			</div>
-		);
-	}
+export default function DeliveryPage() {
+	const product = products[0]; // Ambil salah satu produk untuk ditampilkan
 
 	return (
 		<div className="max-w-5xl mx-auto p-6">
@@ -100,7 +67,7 @@ export default async function ShopPage({ params }) {
 						alt={product.label}
 						width={150}
 						height={150}
-						className='rounded-lg object-coveroverflow-hidden'
+						className='rounded-lg object-cover overflow-hidden'
 					/>
 
 					<div className='flex flex-col justify-between'>
@@ -146,7 +113,6 @@ export default async function ShopPage({ params }) {
 						Lacak Pesanan
 					</h3>
 					<p className='text-zinc-500'>
-
 					</p>
 				</div>
 
