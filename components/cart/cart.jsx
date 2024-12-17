@@ -8,15 +8,15 @@ export default function Isi() {
     <div>
       <div className="mb-1 bg-white p-[19px] rounded-lg drop-shadow-lg overflow-hidden">
         <div className="flex">
-          <input type="checkbox" className="w-[24.68px] rounded-3xl" />
-          <h1 className="font-bold text-[23.73px] ml-3">El Thrift Shop</h1>
+          <input type="checkbox" className="w-[18.68px] rounded-3xl" />
+          <h1 className="font-bold text-[18.73px] ml-3">El Thrift Shop</h1>
         </div>
         <div className="flex mt-5 flex-wrap items-start ">
           <input
             type="checkbox"
             className=" w-[24.68px] h-6 rounded-[15px] mb-12 "
           />
-          <Image src={KAOS} className="w-[78.77px] ml-3" />
+          <Image src={KAOS} alt="kaos" className="w-[78.77px] ml-3" />
           <div className="ml-5 flex-grow">
             <p className="text-[15.19px] w-[80%] font-bold">
               Baju Mekanik Lengan Pendek
@@ -31,9 +31,9 @@ export default function Isi() {
           <div className="ml-auto flex flex-col items-end gap-3 ">
             <p className="text-custom-customGreen font-bold">Rp 60.000</p>
             <div className="flex items-center gap-3">
-              <CiStickyNote size={27} />
-              <FaHeart size={27} />
-              <FaRegTrashAlt size={27} />
+              <CiStickyNote size={22} />
+              <FaHeart size={22} />
+              <FaRegTrashAlt size={22} />
               <div className="border border-black flex items-center w-[83px] justify-between rounded-lg p-2">
                 <button>-</button>
                 <p>1</p>
