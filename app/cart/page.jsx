@@ -5,7 +5,7 @@ import CheckAll from "@/components/cart/checkall";
 export default function Cart() {
   return (
     <main className="">
-      <h1 className=" font-bold ml-[144px] mt-7 font-open-sans w-[226px] text-4xl ">
+      <h1 className=" font-bold ml-[144px] mt-7 font-open-sans w-[226px] text-3xl ">
         Keranjang
       </h1>
       <div className=" flex justify-between mt-7 mx-[144px]">
