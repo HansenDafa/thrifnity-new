@@ -41,7 +41,7 @@ const products = [
 
 export default function Login() {
   return (
-    <main className="h-[90dvh] flex font-open-sans mb-12">
+    <main className="h-[90dvh] flex font-open-sans mb-12 min-h-screen">
       <div className="w-10/12 mx-auto py-8">
         <section className="flex justify-between items-end mb-8">
           <div className="">

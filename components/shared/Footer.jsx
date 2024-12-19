@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CUPHEADIMG from "@/public/images/footer/cuphead.svg";
+import CUPHEADIMG from "@/public/images/footer/CUPHEAD WHITE.png";
 import DOWNLOADFROMIMG from "@/public/images/footer/download.svg";
 
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -7,13 +7,13 @@ import { FaFacebook, FaInstagram, FaPinterest } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="py-10 border-t border-custom-sage shadow-2xl">
-      <section className="w-11/12 mx-auto flex items-center justify-between gap-20">
+    <footer className="py-10 border-t border-custom-sage shadow-2xl bg-custom-sage">
+      <section className="w-11/12 mx-auto flex items-center justify-between gap-20 text-white">
         <div className="w-full flex flex-col gap-6">
           <div>
             <h5 className="font-open-sans text-4xl tracking-wide">Thrifnity</h5>
           </div>
-          <section className="flex gap-2 justify-between items-start font-open-sans font-thin text-lg text-neutral-600">
+          <section className="flex gap-2 justify-between items-start font-open-sans font-thin text-lg">
             <ul className="flex flex-col gap-2">
               <li>Homepage</li>
               <li>Thrift Populer</li>
@@ -35,7 +35,7 @@ export default function Footer() {
               <li>OOTD Slay</li>
             </ul>
             <div>
-              <p className="text-black font-medium">Ikuti Kami</p>
+              <p className="font-medium">Ikuti Kami</p>
               <ul className="flex gap-4">
                 <li>
                   <FaFacebook color="#3b5998" size={36} />
@@ -53,9 +53,17 @@ export default function Footer() {
             </div>
           </section>
         </div>
-        <div>
-          <Image src={CUPHEADIMG} alt="" width={400}/>
-          <Image src={DOWNLOADFROMIMG} alt="" width={400}/>
+        <div className="flex flex-col gap-4">
+          <Image
+            src={CUPHEADIMG}
+            alt=""
+            width={400}
+          />
+          <Image
+            src={DOWNLOADFROMIMG}
+            alt=""
+            width={400}
+          />
         </div>
       </section>
     </footer>
